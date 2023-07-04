@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/static/fonts/TrajanProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Trajan Pro', sans-serif;
+  /* background-image: url("/static/silksong.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px); */
+  overflow: hidden;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+
+.container {
+  text-align: center;
+}
+
+.icon {
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.message {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #e7e6e6;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+#current-date-time {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.statistic {
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: #fce6c9;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+#days-since-reveal {
+  font-size: 24px;
+}
+
+#weeks-since-reveal {
+  font-size: 20px;
+}
+
+#hours-since-reveal {
+  font-size: 17px;
+}
+
+#minutes-since-reveal {
+  font-size: 14px;
+}
+
+#seconds-since-reveal {
+  font-size: 12px;
+}
+
+#disclaimer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-family: Consolas, monospace;
+  color: #ffffff;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+#made-by {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-family: Consolas, monospace;
+  color: #ffffff;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+#made-by a {
+  text-decoration: none;
+  color: #ffffff;
+}

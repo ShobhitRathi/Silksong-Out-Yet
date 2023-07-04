@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hollow Knight: Silksong Release Date</title>
+    <link rel="icon" href="{{ url_for('static', filename='icon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v={{ cache_buster }}">
+    <script>
+        setTimeout(function() {
+            location.reload();
+        }, 60000);
+    </script>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4">
+    </video>
+    <div class="container">
+        <a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/"><img src="{{ url_for('static', filename='silksong-icon.png') }}" alt="Silksong Icon" class="icon"></a>
+        <p class="message">{{ message }}</p>
+        <!--<p class="time">{{ timez }}</p>-->
+        <p id="current-date-time"></p>
+        <p class="statistic" id="days-since-reveal"></p>
+        <p class="statistic" id="weeks-since-reveal"></p>
+        <p class="statistic" id="hours-since-reveal"></p>
+        <p class="statistic" id="minutes-since-reveal"></p>
+        <p class="statistic" id="seconds-since-reveal"></p>
+        <p id="disclaimer">Page auto-refreshes every 60 seconds.</p>
+        <p id="made-by">Made by <a href="https://github.com/ShobhitRathi"> Shobhit Rathi </a> &copy; 2023</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
